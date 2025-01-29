@@ -1,0 +1,8 @@
+import ugradio
+import numpy as np
+
+SAMPLE_RATE = 1e6
+sdr = ugradio.sdr.SDR(sample_rate=1e6, direct=True)
+
+datat = sdr.capture_data(nlbocks=10, nsamples=2048)
+np.savez('out.npz', new_data=data, sample_rate=1e6)
