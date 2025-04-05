@@ -1,0 +1,11 @@
+
+  paste the following into terminal to begin github stuff:
+
+echo "# Cosmic-Addicts" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/justmytien/Cosmic-Addicts.git
+git push -u origin main
+
